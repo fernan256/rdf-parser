@@ -1,0 +1,30 @@
+{
+  "development": {
+    "use_env_variable": "postgres://ebooks:diego1234@127.0.0.1:5432/ebooks",
+    "dialect": "postgres",
+    "logging": false,
+    "pool": {
+      "max": 10,
+      "min": 5,
+      "idle": 10000
+    }
+  },
+  "test": {
+    "use_env_variable": "postgres://ebooks:diego1234@127.0.0.1:5432/test",
+    "dialect": "postgres",
+    "logging": false,
+    "pool": {
+      "max": 10,
+      "min": 5,
+      "idle": 10000
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  }
+}
